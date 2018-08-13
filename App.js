@@ -142,7 +142,7 @@ export default class App extends React.Component {
     SQLite.echoTest().then(() => {
       this.updateProgress("Integrity check passed ...")
       this.updateProgress("Opening database ...")
-      SQLite.openDatabase({name : "SQLiteCipher.sqlite", readOnly: true, createFromLocation : "~data/SQLiteCipher.sqlite"}).then((DB) => {
+      SQLite.openDatabase({key:'sameer@saachi123', name : "SQLiteCipher_2048.sqlite", createFromLocation : "~data/SQLiteCipher_2048.sqlite"}).then((DB) => {
         db = DB;
         this.updateProgress("Database OPEN");
         this.populateDatabase(DB);
